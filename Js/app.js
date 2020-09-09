@@ -19,8 +19,8 @@ dropBtn.addEventListener("click", cambio, true);
 
 
 // Select the button
-const btnDark = document.querySelector("themeBtnDark");
-const btnLight = document.querySelector("themeBtnLight");
+const btnDark = document.getElementById("themeBtnDark");
+const btnLight = document.getElementById("themeBtnLight");
 const showDark = () => {
     document.getElementById("style").setAttribute("href", "./styles/styleDark.css");
     document.getElementById("logo").setAttribute("src", "./assets/gifOF_logo_dark.png");
