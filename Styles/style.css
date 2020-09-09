@@ -86,7 +86,7 @@ body {
   display: block; }
 
 .themeSelector::after {
-  content: url(/assets/dropdown.svg);
+  content: url("./assets/dropdown.svg");
   /* HACER CON FONT AWSOME */
   display: table-cell;
   padding-top: 7px;
