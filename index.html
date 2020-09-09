@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/style.css" id="style">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Guifos</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">
+            ¡Bienvenidos/as a Guifos.com! ————Donde los gifs están. // Número de visitas: 12.765.803
+        </h1>
+    </header>
+
+    <main class="main">
+
+        <img class="logo" id="logo" src="/assets/gifOF_logo.png" alt="gifoslogo">
+        <div class="menu">
+
+
+            <div class="navbarOptions">
+                <form action="./upload.html"> <button class="createGuifos">
+                        <span>Crear Guifos</span>
+                    </button>
+                </form>
+                <div class="navbarDropdown">
+                    <button class=" themeSelector" id="themeselector">
+                        <span class="choseThemeBtn">Elegir Tema</span>
+                        <!--    <i class="fas fa-caret-down"></i>  font awsome ver -->
+                    </button>
+                    <div class="dropdownListHidden" id="dropdownList">
+
+                        <button class="themeBtnLight"> Sailor Day</button>
+                        <br>
+                        <button class="themeBtnDark">
+                            Sailor Night
+                        </button>
+                    </div>
+                </div>
+                <button class="myGuifossBtn" id="btnMyGifs">
+                    <span class="myGuifos"><u>M</u></span>is Guifos
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <section class="bar">
+        <!-- BARRA DE BUSQUEDA -->
+        <div class="search">
+            <h2>Buscar</h2>
+        </div>
+        <div class="searchBar">
+            <input id="findBox" class="findBox" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
+                type="text">
+            <button id="findButton" type="submit" class="findButton"><img id="loupe" class="loupe"
+                    src="./assets/lupa.svg" alt="buscar"><span id="findButtonText"
+                    class="pBlueRegularbutton">Buscar</span></button>
+        </div>
+        <div class="searchMenu" id="reBusqueda">
+            <div class="containerAutocomplete">
+                <button class="btnSearchResult" onclick="search(sheldon)">Sheldon</button>
+                <button class="btnSearchResult" onclick="search(bleach)">Bleach</button>
+                <button class="btnSearchResult" onclick="search(meme)">Meme</button>
+            </div>
+        </div>
+        <div id="resultado">
+
+        </div>
+    </section>
+
+    <section>
+        <!-- HOY TE SUGERIMOS -->
+        <div class="suggestions">
+            <h2>Hoy te sugerimos:</h2>
+        </div>
+        <div class="suggestCont" id="suggestConteiner"></div>
+    </section>
+    <section>
+        <!-- TENDENCIA -->
+        <div class="trend">
+            <h2>Tendencias:</h2>
+            <div id="trendContent" class="trendCont">
+
+            </div>
+        </div>
+    </section>
+    <script src="/Js/app.js"></script>
+</body>
+
+</html>

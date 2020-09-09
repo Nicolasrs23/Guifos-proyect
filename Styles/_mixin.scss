@@ -1,0 +1,39 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    
+}
+@mixin bars {
+    background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+    color: #ffffff;
+    font-family: $fontAll;
+}
+
+@mixin barsDark {
+    background: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+    color: #ffffff;
+    font-family: $fontAll;
+}
+
+@mixin pinkButtons{
+    color: $color;
+    font-family: $fontAll
+}
+
+@mixin suggesTrend {
+    font-family: $fontAll;
+    font-size: 14px;
+    height: 32px;
+    align-items: center;
+    margin-left: 6px;
+    display: flex;
+}
+
+@mixin imgtitle{
+    font-family: $fontAll;
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 14px;
+    height: 24px;
+    color: $textColor;
+    background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
