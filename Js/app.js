@@ -22,14 +22,14 @@ dropBtn.addEventListener("click", cambio, true);
 const btnDark = document.querySelector(".themeBtnDark");
 const btnLight = document.querySelector(".themeBtnLight");
 const showDark = () => {
-    document.getElementById("style").setAttribute("href", "/styles/styleDark.css");
-    document.getElementById("logo").setAttribute("src", "/assets/gifOF_logo_dark.png");
+    document.getElementById("style").setAttribute("href", "./styles/styleDark.css");
+    document.getElementById("logo").setAttribute("src", "./assets/gifOF_logo_dark.png");
 
 }
 
 const showLight = () => {
-    document.getElementById("style").setAttribute("href", "/styles/style.css");
-    document.getElementById("logo").setAttribute("src", "/assets/gifOF_logo.png");
+    document.getElementById("style").setAttribute("href", "./styles/style.css");
+    document.getElementById("logo").setAttribute("src", "./assets/gifOF_logo.png");
 
 }
 
