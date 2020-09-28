@@ -230,7 +230,6 @@ document.getElementById('uplButton').onclick = () => {
 
 }
 
-/* var urlGif = ""; */
 
 function uno() {
 

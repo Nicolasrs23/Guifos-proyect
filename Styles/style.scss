@@ -107,7 +107,7 @@ body {
 }
 
 .themeSelector::after {
-  content: url("/assets/dropdown.svg");
+  content: url("../assets/dropdown.svg");
   /* HACER CON FONT AWSOME */
   display: table-cell;
   padding-top: 7px;
@@ -326,9 +326,14 @@ button:hover {
 
   height: 260px;
   width: 240px;
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  
 
 }
-
+.trend2:hover {
+  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  border: dotted 2px;
+}
 .trendCont {
   margin-top: 1rem;
   width: 100%;
@@ -349,23 +354,21 @@ button:hover {
 
 }
 
-.trendTitle {
-  /* VER DE DARLE EL FORMATO CORRECTO */
+
+.trend2:hover + .trendTitle{
   font-family: "Chakra Petch", sans-serif;
   font-size: 14px;
-  height: 28px;
+  height: 35px;
   color: #FFFFFF;
   background: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
   position: absolute;
-  width: 237px;
-  display: flex;
+  width: 97%;
+  display: block;
   align-items: center;
-  z-index: 1;
-  margin-top: 234px;
+   margin-top: -40px; 
   padding-left: 3px;
   padding-top: 1px;
-}
-
+} 
 
 //upload
 .mainUpload {
@@ -505,8 +508,8 @@ button:hover {
 .captureBox {
   background-color: #E6E6E6;
   display: none;
-  width: 50%;
-  box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  width: 57%;
+  box-shadow:inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
 .titleCamera {
@@ -839,12 +842,14 @@ button:hover {
   background: #F7C9F3;
   border: 1px solid #110038;
   box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-  margin-right: 2rem;
+  margin-right: 4rem;
+  margin-bottom: 2rem;
 }
 
 .finalGuif {
   width: 70%;
   margin-left: 4rem;
+  margin-top: 2rem;
 }
 
 .hiddeninput {

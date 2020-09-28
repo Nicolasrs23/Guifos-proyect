@@ -46,13 +46,14 @@ searchbutton.addEventListener("click", function (e) {
     e.preventDefault()
     const q = searchInput.value
     search(q)
-    if (event.keyCode === 13) {
-        document.getElementById("click").click();
-    }
+    
 })
 
 
 function search(q) {
+
+    document.getElementById("trendTitleH").innerHTML = "Resultado de tu Busqueda:";
+    
 
     const apiKey = "uv5wjRxUs3LNASV1jIcW2xdYUdCx6AcT";
     const Path = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${q}`;
@@ -90,6 +91,9 @@ function search(q) {
 
 
     tagDrpdwn(q);
+    
+    window.scrollTo(300, 600);
+
 }
 
 
