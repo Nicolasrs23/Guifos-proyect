@@ -254,12 +254,12 @@ function uno() {
 
 
                     urlGif = obj.data.images.original.url;
-
+                    console.log(urlGif)
                     localStorage.setItem(dataId, JSON.stringify(obj));
                     var kv = localStorage.getItem(dataId);
                     var kvParse = JSON.parse(kv);
                     var keyUrl = kvParse.data.images.original.url;
-
+                    console.log(keyUrl)
                     const trendCaja = document.createElement('div');
                     misGuifosCont.appendChild(trendCaja);
                     trendCaja.classList.add('gridCont');
